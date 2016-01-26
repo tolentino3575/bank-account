@@ -5,25 +5,38 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Movie Tickets</title>
+    <title>Make Bank Account</title>
   </head>
   <body>
     <div class="container">
-      <h1>Movie Price Calculator</h1>
+      <h1>Welcome To The Bank</h1>
 
-      <form>
-        <p>How many months has your movie been out?</p>
-        <input id = "movieInput">
+      <form id = "signup">
+        <p>Sign up for a bank account</p>
+        <input id = "yourName" placeholder = "Your Name">
+        <input id = "initialDeposit" placeholder="Initial Deposit">
 
-        <p>How old are you?</p>
-        <input id = "ageInput">
-
-        <p>What time do you want to see it?</p>
-        <input id = "timeInput">
-        </br>
-        <button>Click for ticket price</button>
+        <button class = "btn btn-info">Create Bank Account</button>
       </form>
-      <button class = "btn btn-info">Final Price</button>
+
+
+        <p>Deposit money:</p>
+        <input id = "deposit" placeholder = "Deposit Amount">
+
+        <button id="bankDeposit" class = "btn btn-info">Submit</button>
+
+
+        <p>Withdraw Money:</p>
+        <input id = "withdraw" placeholder="Withdraw Amount">
+
+        <button id ="bankWithdraw" class = "btn btn-info">Submit</button>
+
+
+      <div>
+        <p>Great Job Making A Bank Account <span class = "accountName"> </p>
+      </div>
+      <p class="balance"></p>
+
     </div>
   </body>
 </html>
