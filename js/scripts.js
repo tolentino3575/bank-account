@@ -23,7 +23,6 @@ $("#signup").submit(function (event) {
   $(".accountName").text(newAccount.userName);
   event.preventDefault();
 
-
   $("#bankDeposit").click(function(){
     var deposit = parseInt($("#deposit").val());
     var newDeposit = (newAccount.initialDeposit + deposit);
@@ -37,10 +36,5 @@ $("#signup").submit(function (event) {
     newAccount.initialDeposit = newDeposit;
     $(".balance").text(newDeposit);
   })
-
-
-})
-
-
-
+ })
 })
