@@ -7,8 +7,8 @@ Account.prototype.deposits = function(deposit) {
   return this.initialDeposit + deposit;
 }
 
-Account.prototype.withdrawls = function(withdrawl) {
-  return this.initialDeposit - withdrawl;
+Account.prototype.withdrawls = function(withdrawal) {
+  return this.initialDeposit - withdrawal;
 }
 
 
